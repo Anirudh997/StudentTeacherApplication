@@ -5,15 +5,16 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserModel {
+public class UserMarksModel {
     private String firstName;
     private String lastName;
-    private String emailId;
-    private String role;
-    private String password;
+    private String emailAddress;
+    private List<MarksModel> marks;
 
 }
